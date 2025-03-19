@@ -11,10 +11,10 @@ function convertToRoman(num) {
 
     let result = '';
 
-    // Loop through each Roman numeral symbol
+    // Iterate through each symbol-value pair
     for (let i = 0; i < obj.length; i++) {
         const [symbol, value] = obj[i];
-        
+
         // While the number is greater than or equal to the current value
         while (num >= value) {
             result += symbol;  // Append the Roman numeral symbol
@@ -25,7 +25,7 @@ function convertToRoman(num) {
     return result;
 }
 
-// You can test your code by running the function with an input
+// Test the function with the examples
 console.log(convertToRoman(14));   // Output: XIV
 console.log(convertToRoman(798));  // Output: DCCXCVIII
 console.log(convertToRoman(36));   // Output: XXXVI
