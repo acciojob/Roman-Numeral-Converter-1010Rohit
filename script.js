@@ -1,4 +1,5 @@
 function convertToRoman(num) {
+    // Symbols and their corresponding values in descending order
     const obj = [
         ['M', 1000], 
         ['D', 500], 
@@ -24,8 +25,3 @@ function convertToRoman(num) {
 
     return result;
 }
-
-// Test the function with the examples
-console.log(convertToRoman(14));   // Output: XIV
-console.log(convertToRoman(798));  // Output: DCCXCVIII
-console.log(convertToRoman(36));   // Output: XXXVI
